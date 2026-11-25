@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "categories": [
+    {
+      "id": "learning",
+      "name": "学习资源",
+      "description": "课程、教程与研究方法学习资料。",
+      "count": 0
+    },
+    {
+      "id": "tools",
+      "name": "研究工具",
+      "description": "提升检索、阅读、整理与写作效率的工具。",
+      "count": 0
+    },
+    {
+      "id": "skills",
+      "name": "研究类 skill",
+      "description": "可复用的研究技能与工作流。",
+      "count": 0
+    },
+    {
+      "id": "mcp",
+      "name": "研究类 MCP 服务",
+      "description": "面向研究场景的 MCP 服务与连接入口。",
+      "count": 0
+    },
+    {
+      "id": "journals",
+      "name": "期刊与会议",
+      "description": "期刊、会议与投稿相关官方网站。",
+      "count": 0
+    },
+    {
+      "id": "institutions",
+      "name": "高校与研究机构",
+      "description": "高校、研究机构与学术服务平台。",
+      "count": 0
+    }
+  ],
+  "resources": []
+}
