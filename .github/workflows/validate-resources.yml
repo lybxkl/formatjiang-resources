@@ -10,7 +10,11 @@ on:
         type: boolean
 
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: research-resources-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   validate:
@@ -32,16 +36,41 @@ jobs:
         run: npm test
 
       - name: 检查已提交的生成文件
+        if: ${{ !inputs.commit }}
         run: npm run check
 
-      - name: 重建并提交生成文件
-        if: inputs.commit
+      - name: 验证生成结果
+        if: ${{ inputs.commit }}
+        run: npm run build
+
+  update:
+    needs: validate
+    if: ${{ inputs.commit }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 准备 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: 安装依赖
+        run: npm ci
+
+      - name: 重建生成文件
+        run: npm run build
+
+      - name: 提交并推送生成文件
         run: |
-          npm run build
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add catalog.json README.md
           if ! git diff --cached --quiet; then
             git commit -m "chore: 更新研究资源索引"
-            git push
+            git push origin "HEAD:${GITHUB_REF_NAME}"
           fi

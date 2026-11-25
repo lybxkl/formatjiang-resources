@@ -1,0 +1,4 @@
+catalog.json text eol=lf
+README.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
