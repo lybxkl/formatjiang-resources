@@ -1,0 +1,7 @@
+name: grill-me
+url: https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me
+description: 访谈式 skill：对计划或设计逐层追问，每轮只问一个问题并给出推荐答案，按决策树深度优先推进，直到每个分支都达成共识。适合在动手前把需求边界、取舍与依赖问清楚。
+tags:
+  - 需求澄清
+  - 方案评审
+  - 决策树

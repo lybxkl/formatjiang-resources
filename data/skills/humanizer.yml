@@ -1,0 +1,7 @@
+name: humanizer
+url: https://github.com/blader/humanizer
+description: 写作修改 skill：识别并清除 AI 生成文本的痕迹，包括空泛拔高、宣传腔、以 -ing 结尾的空洞分析、模糊引证、破折号滥用、三段式排比与 AI 高频词，按维基百科「Signs of AI writing」的条目逐类改写。
+tags:
+  - 写作润色
+  - 文风
+  - AI 写作痕迹
