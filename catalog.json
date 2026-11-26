@@ -11,7 +11,7 @@
       "id": "tools",
       "name": "研究工具",
       "description": "提升检索、阅读、整理与写作效率的工具。",
-      "count": 0
+      "count": 1
     },
     {
       "id": "skills",
@@ -87,6 +87,19 @@
       "tags": [
         "期刊",
         "投稿"
+      ],
+      "icon": ""
+    },
+    {
+      "id": "cnki",
+      "category": "tools",
+      "name": "中国知网",
+      "url": "https://www.cnki.net/",
+      "description": "中国知网（CNKI）学术文献平台，可检索期刊论文、学位论文、会议论文与报纸的题录和摘要；全文下载通常需要机构订阅或单独购买。",
+      "tags": [
+        "文献检索",
+        "期刊论文",
+        "学位论文"
       ],
       "icon": ""
     },
