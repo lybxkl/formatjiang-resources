@@ -17,7 +17,7 @@
       "id": "skills",
       "name": "研究类 skill",
       "description": "可复用的研究技能与工作流。",
-      "count": 3
+      "count": 4
     },
     {
       "id": "mcp",
@@ -39,6 +39,20 @@
     }
   ],
   "resources": [
+    {
+      "id": "empirical-research-pipeline",
+      "category": "skills",
+      "name": "empirical-research-pipeline",
+      "url": "https://github.com/lybxkl/SPSS-Style-Charting-Skill",
+      "description": "实证研究数据流水线 skill：把混合研究资料整理成可追溯的数据集，由 Agent 选择统计模型并回原材料补齐缺数，产出论文级图集、分析报告与论文式 DOCX/PDF。仓库名 SPSS-Style-Charting-Skill 沿用早期「SPSS 风格制图」的来源。",
+      "tags": [
+        "实证研究",
+        "数据分析",
+        "制图",
+        "论文组稿"
+      ],
+      "icon": ""
+    },
     {
       "id": "grill-me",
       "category": "skills",
